@@ -179,13 +179,12 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Data Siswa SMKN 1 CIOMAS</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Data Siswa SMKN 1 Ciomas</h1>
                     <br>
-                    <div class="row">
-                     <!-- DataTales Example -->
+                    <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <a href ="tambahdata.php" class="btn btn-primary">Tambah Data</a>
+                            <a href="tambahdata.php" class="btn btn-primary">Tambah Data</a>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -202,27 +201,35 @@
                                         </tr>
                                     </thead>
 
+                                    <?php
+                                        include '../db.php';
+                                        $i = 1;
+                                        $data = mysqli_query($koneksi, "SELECT * FROM siswa");
+                                        while($d = mysqli_fetch_array($data)){
+                                    ?>
+
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Dahlia Najlaa Tsuraya</td>
-                                            <td>123456</td>
-                                            <td>dahlia@gmail.com</td>
-                                            <td>Wanita</td>
+                                            <td><?php echo $i++ ?></td>
+                                            <td><?php echo $d['nama']; ?></td>
+                                            <td><?php echo $d['nisn']; ?></td>
+                                            <td><?php echo $d['email']; ?></td>
+                                            <td><?php echo $d['jk']; ?></td>
                                             <td>
                                                 <a href="" class="btn btn-primary">edit</a>
                                                 <button class="btn btn-danger">hapus</button>
                                             </td>
                                             
                                         </tr>
+                                        <?php
+                                        }
+                                        ?>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
 
-                </div>
-                                            
 
                 </div>
                 <!-- /.container-fluid -->

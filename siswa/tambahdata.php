@@ -146,7 +146,7 @@
                         <!-- Nav Item - Alerts -->
                         
 
-                        
+
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -178,10 +178,10 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Tambahan Data Siswa SMKN 1 CIOMAS</h1>
-                    
-                     <!-- /.form -->           
-                     <label for="inputNAMASISWArd5" class="form-label">NAMA SISWA</label>
+                    <h1 class="h3 mb-4 text-gray-800">Tambah Data Siswa SMKN 1 Ciomas</h1>
+
+                    <!-- /.form -->
+                    <label for="inputNAMASISWArd5" class="form-label">NAMA SISWA</label>
                      <input type="NAMASISWA" id="inputNAMASISWArd5" class="form-control" aria-describedby="NAMASISWAHelpBlock">
                      <div id="NAMASISWAHelpBlock" class="form-text">
 
@@ -196,11 +196,12 @@
                      <label for="inputJENISKELAMINrd5" class="form-label">JENIS KELAMIN</label>
                      <input type="JENISKELAMIN" id="inputJENISKELAMINrd5" class="form-control" aria-describedby="JENISKELAMINHelpBlock">
                      <div id="JENISKELAMINHelpBlock" class="form-text">
-
                       </form>
+                      <a class="btn btn-primary">Simpan</a>
                     </div>
-
-
+                        
+                </div>
+                
                 <!-- /.container-fluid -->
 
             </div>
